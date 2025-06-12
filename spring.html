@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SPRING</h1>
+    <img src="/Back-end/spring.jpg" alt="">
+    <p>Spring Boot is an open-source Java framework used for programming standalone, production-grade Spring-based applications with a bundle of libraries that make project startup and management easier.[3] Spring Boot is a convention-over-configuration extension for the Spring Java platform intended to help minimize configuration concerns while creating Spring-based applications.[4][5] The application can still be adjusted for specific needs, but the initial Spring Boot project provides a preconfigured "opinionated view" of the best configuration to use with the Spring platform and selected third-party libraries.[6][7]
+
+Spring Boot can be used to build microservices, web applications, and console applications.[3][8]
+
+Features
+Embedded Tomcat, Jetty or Undertow web application server.[9]
+Provides opinionated 'starter' Project Object Models (POMs) for the build tool. The only build tools supported are Maven and Gradle.[10][11]
+Automatic configuration of the Spring Application.[12]
+Provides production-ready[4] functionality such as metrics,[13] health checks,[13] and externalized configuration.[14]
+No code generation is required.[9]
+No XML configuration is required.[10]
+Optional support for Kotlin and Apache Groovy in addition to Java.[3][15]
+Bootstrapping DispatcherServlet
+See also: Spring Framework § Configuration of DispatcherServlet
+Spring Boot does not require manual configuration of the DispatcherServlet, since it automatically configures the application based on the configuration it detects. [16]
+
+SpringBootServletInitializer
+Spring Boot has a class SpringBootServletInitializer, which is a specialization of the WebApplicationInitializer.[16] This SpringBootServletInitializer is an out-of-the-box implementation of WebApplicationInitializer, which eliminates the need for the developer to construct their own implementation of the WebApplicationInitializer class.[16]
+
+Configuration properties
+The configuration properties for the Spring Boot application can be specified in the application.properties or application.yml file.[16] Examples of properties that can be included in this file include the server.port and spring.application.name properties.[16]
+
+Autoconfiguration
+@SpringBootApplication
+Spring boot has an annotation, @SpringBootApplication, which allows the Spring Boot application to autoconfigure third-party libraries and detected features found on the classpath.[16] As an example, the class that has the @SpringBootApplication annotation can extend the SpringBootServerInitializer class if the application is packaged and deployed as a WAR file.[16]
+
+The @SpringBootApplication annotation combines three Spring-specific annotations: @SpringBootConfiguration, @EnableAutoConfiguration and @ComponentScan.[17]
+
+@SpringBootConfiguration
+The @SpringBootConfiguration annotation is a specialization of the Spring-specific @Configuration annotation.[17] The class with the @SpringBootConfiguration is marked as the configuration class for the Spring Boot application.[17]
+
+@EnableAutoConfiguration
+The @EnableAutoConfiguration annotation is Spring-specific annotation that enables the Spring Boot automatic configuration. [17]
+
+Actuator
+The Spring Boot Actuator allows for monitoring and management capabilities for the Spring Boot Application.[18] A major advantage of using the Spring Boot Actuator is that it implements a number of production-ready features without requiring the developer to construct their own implementations.[18]
+
+If Maven is used as the build tool, then the spring-boot-starter-actuator dependency can be specified in the pom.xml configuration file.[19]
+
+Integration with Spring Framework Modules</p>
+    
+</body>
+</html>
